@@ -1,4 +1,7 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "cruzverde": "apps/cruzverde",
+    "cruzverde-e2e": "apps/cruzverde-e2e"
+  }
 }

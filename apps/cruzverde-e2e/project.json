@@ -1,0 +1,28 @@
+{
+  "root": "apps/cruzverde-e2e",
+  "sourceRoot": "apps/cruzverde-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/cruzverde-e2e/cypress.json",
+        "devServerTarget": "cruzverde:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "cruzverde:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/cruzverde-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["cruzverde"]
+}

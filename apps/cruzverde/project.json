@@ -1,0 +1,93 @@
+{
+  "projectType": "application",
+  "root": "apps/cruzverde",
+  "sourceRoot": "apps/cruzverde/src",
+  "prefix": "nx-angular-nest",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/cruzverde",
+        "index": "apps/cruzverde/src/index.html",
+        "main": "apps/cruzverde/src/main.ts",
+        "polyfills": "apps/cruzverde/src/polyfills.ts",
+        "tsConfig": "apps/cruzverde/tsconfig.app.json",
+        "assets": [
+          "apps/cruzverde/src/favicon.ico",
+          "apps/cruzverde/src/assets"
+        ],
+        "styles": ["apps/cruzverde/src/styles.css"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/cruzverde/src/environments/environment.ts",
+              "with": "apps/cruzverde/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "cruzverde:build:production"
+        },
+        "development": {
+          "browserTarget": "cruzverde:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "cruzverde:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/cruzverde/src/**/*.ts",
+          "apps/cruzverde/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/cruzverde"],
+      "options": {
+        "jestConfig": "apps/cruzverde/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
