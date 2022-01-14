@@ -10,6 +10,7 @@ export class UsersService {
 
   getData() {
     let url = "http://localhost:3333/api";
+    console.log(11111)
     return this.http.get(url);
   }
 }
