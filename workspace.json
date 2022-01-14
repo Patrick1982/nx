@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "api-payment-service": "apps/api/payment-service",
+    "api-product-service": "apps/api/product-service",
     "cruzverde": "apps/cruzverde",
     "cruzverde-e2e": "apps/cruzverde-e2e"
   }
