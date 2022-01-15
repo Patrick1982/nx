@@ -2,6 +2,15 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [2.0.3](https://github.com/Patrick1982/nx/compare/api-payment-service-2.0.2...api-payment-service-2.0.3) (2022-01-15)
+
+
+### Bug Fixes
+
+* **fggg:** hhhhh ([6d046d8](https://github.com/Patrick1982/nx/commit/6d046d831b1c82bb8b77deaf8990baf6cabb0489))
+
+
+
 ## [2.0.2](https://github.com/Patrick1982/nx/compare/api-payment-service-2.0.1...api-payment-service-2.0.2) (2022-01-15)
 
 
