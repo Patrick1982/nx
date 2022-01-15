@@ -2,6 +2,10 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.1.1](https://github.com/Patrick1982/nx/compare/api-product-service-1.1.0...api-product-service-1.1.1) (2022-01-15)
+
+
+
 # [1.1.0](https://github.com/Patrick1982/nx/compare/api-product-service-1.0.0...api-product-service-1.1.0) (2022-01-15)
 
 
