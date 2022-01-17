@@ -16,6 +16,7 @@ jobs:
         run: |
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+      - run: yarn install --frozen-lockfile
       - run: yarn nx version api-product-service --push --baseBranch main
       - run: yarn nx version api-payment-service --push --baseBranch main
       - run: echo "Hello ${{ github.event.inputs.name }}"
