@@ -23,7 +23,8 @@ jobs:
         with:
           node-version: '14'
       - run: npm install
-      - run: npx nx affected --target=version --push --baseBranch main
+      - run: npx nx affected --target=version --baseBranch main
+      - run: git push --follow-tags origin main
       - run: echo "Hello ${{ github.event.inputs.name }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
