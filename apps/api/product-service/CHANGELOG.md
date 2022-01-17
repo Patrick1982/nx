@@ -2,6 +2,18 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.5.1](https://github.com/Patrick1982/nx/compare/api-product-service-1.5.0...api-product-service-1.5.1) (2022-01-17)
+
+
+### Bug Fixes
+
+* **priemr verisonaiento:** hhhhhssss ([9116570](https://github.com/Patrick1982/nx/commit/9116570f2fada02ab96911e766a22bf0885e8899))
+* **priemr verisonaiento:** hhhhhssss ([cb9b67d](https://github.com/Patrick1982/nx/commit/cb9b67d2dd93b32d5d8bee3d438b7d7709c4ab1d))
+* **priemr verisonaiento:** hhhhhssss ([08651b0](https://github.com/Patrick1982/nx/commit/08651b05b43c49716f5c5aa58c503363a337c946))
+* **prueba con dos servicios:** hhhhhssss ([df9c740](https://github.com/Patrick1982/nx/commit/df9c740f18549812297df6498bc83fd5e3b81a9f))
+
+
+
 # [1.5.0](https://github.com/Patrick1982/nx/compare/api-product-service-1.4.0...api-product-service-1.5.0) (2022-01-17)
 
 
